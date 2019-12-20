@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>En route to wonderland</title>
+</head>
+<body onload="urlRedirect()">
+    <p>Hello Fruits!<p>
+</body>
+<script language="javascript" type="text/javascript">
+function urlRedirect(){
+    var d = new Date();
+    var seed = d.getTime();
+    var numUrl = 3;
+    var targetUrl = null;
+    switch(seed % numUrl){
+        case 0:
+            targetUrl = "https://m.weibo.cn/2161194987/4446928269942098";
+        break;
+        case 1:
+            targetUrl = "https://m.weibo.cn/5985661644/4449560342111255";
+        break;
+        case 2:
+            targetUrl = "https://m.weibo.cn/6051780137/4447352330839362";
+    }
+    window.location.replace(targetUrl)
+}
+</script>
+    
+</html>
+
+
+
+
+
