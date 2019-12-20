@@ -3,9 +3,9 @@
 <head>
     <title>En route to wonderland</title>
 </head>
-<body onload=generateLink()>
+<body onload="urlRedirect()">
+    <p>Hello Fruits!<p>
 </body>
-
 <script language="javascript" type="text/javascript">
 function urlRedirect(){
     var d = new Date();
@@ -22,28 +22,13 @@ function urlRedirect(){
         case 2:
             targetUrl = "https://m.weibo.cn/6051780137/4447352330839362";
     }
-    // window.location.replace(targetUrl)
-    return targetUrl
-}
-
-function generateLink(){
-    // Create anchor element. 
-    var a = document.createElement('a');  
-
-    // Create the text node for anchor element. 
-    var link = document.createTextNode("Do you wanna build a snow man?"); 
-    
-    // Append the text node to anchor element. 
-    a.appendChild(link);  
-    
-    // Set the title. 
-    a.title = "Do you wanna build a snow man?";  
-
-    // Set the href property. 
-    a.href = urlRedirect()
-    // Append the anchor element to the body. 
-    document.body.prepend(a);  
+    window.location.replace(targetUrl)
 }
 </script>
     
 </html>
+
+
+
+
+
