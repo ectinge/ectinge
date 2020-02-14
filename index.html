@@ -10,7 +10,7 @@
 function urlRedirect(){
     var d = new Date();
     var seed = d.getTime();
-    var numUrl = 48;
+    var numUrl = 59;
     var targetUrl = null;
     switch(seed % numUrl){
         case 0:
@@ -157,6 +157,39 @@ function urlRedirect(){
         case 47:
             targetUrl = "https://video.weibo.com/show?fid=1034:4305173552807724";
         break;  
+        case 48:
+            targetUrl = "https://video.weibo.com/show?fid=1034:4461862834864130";
+        break;
+        case 49:
+            targetUrl = "https://video.weibo.com/show?fid=1034:4449762209103884";
+        break;
+        case 50:
+            targetUrl = "https://m.weibo.cn/s/video/index?object_id=1042151:4468305080025093&segment_id=4468305080025093&blog_mid=4468305286849502";
+        break;
+        case 51:
+            targetUrl = "https://m.weibo.cn/s/video/index?object_id=1042151:4471940870766598&segment_id=4471940870766598&blog_mid=4471941421353394";
+        break;
+        case 52:
+            targetUrl = "https://video.weibo.com/show?fid=1034:4466475587797014";
+        break;
+        case 53:
+            targetUrl = "https://video.weibo.com/show?fid=1034:4397381098367672";
+        break;
+        case 54:
+            targetUrl = "https://video.weibo.com/show?fid=1034:4397635768124884";
+        break;
+        case 55:
+            targetUrl = "https://video.weibo.com/show?fid=1034:4397364639910934";
+        break;
+        case 56:
+            targetUrl = "https://video.weibo.com/show?fid=1034:4397314094340996";
+        break;
+        case 57:
+            targetUrl = "https://video.weibo.com/show?fid=1034:4396637708309886";
+        break;
+        case 58:
+            targetUrl = "https://video.weibo.com/show?fid=1034:4376599450341668";
+        break;
     }
     window.location.replace(targetUrl)
 }
